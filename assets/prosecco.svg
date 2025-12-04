@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="560" viewBox="0 0 360 560" role="img" aria-label="Prosecco flaske illustration">
+  <defs>
+    <linearGradient id="prosecco-glass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff9d6"/>
+      <stop offset="100%" stop-color="#f3d77a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="prosecco-bottle" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7e6a9"/>
+      <stop offset="60%" stop-color="#e6c34f"/>
+      <stop offset="100%" stop-color="#c59b2c"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="560" fill="#0d1a1e" rx="32"/>
+  <rect x="60" y="70" width="240" height="420" rx="46" fill="#112a32" stroke="#1f454d" stroke-width="8"/>
+  <rect x="168" y="82" width="24" height="78" rx="6" fill="#d8d0c7" stroke="#b1a69d" stroke-width="6"/>
+  <rect x="150" y="120" width="60" height="76" rx="10" fill="#f7f2e7" stroke="#d8d0c7" stroke-width="6"/>
+  <rect x="130" y="176" width="100" height="236" rx="30" fill="url(#prosecco-bottle)" stroke="#9a7721" stroke-width="8"/>
+  <rect x="138" y="208" width="84" height="80" rx="12" fill="#fff9e6" opacity="0.85"/>
+  <text x="180" y="254" text-anchor="middle" font-family="'Playfair Display', 'Times New Roman', serif" font-size="26" fill="#8c6515">Prosecco</text>
+  <text x="180" y="284" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="14" fill="#6a4d10">Valdobbiadene DOCG</text>
+  <g transform="translate(250,340)">
+    <rect x="-10" y="-60" width="20" height="24" rx="5" fill="#d8d0c7" stroke="#b1a69d" stroke-width="3"/>
+    <rect x="-22" y="-36" width="44" height="108" rx="18" fill="#f7f2e7" stroke="#d8d0c7" stroke-width="4"/>
+    <path d="M-20 -6 h40 v52 q0 26 -20 26 q-20 0 -20 -26z" fill="url(#prosecco-glass)" stroke="#b38a1f" stroke-width="4"/>
+    <circle cx="0" cy="6" r="3" fill="#fff4c2"/> 
+    <circle cx="-8" cy="18" r="4" fill="#fff4c2"/> 
+    <circle cx="6" cy="26" r="3" fill="#fff4c2"/> 
+    <circle cx="-4" cy="36" r="5" fill="#fff4c2"/>
+  </g>
+  <text x="180" y="502" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="18" fill="#e6f7ff">Frisk, perlende og klar til fest</text>
+</svg>

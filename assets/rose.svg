@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="560" viewBox="0 0 360 560" role="img" aria-label="Rosévin flaske illustration">
+  <defs>
+    <linearGradient id="bottle" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f9d5d7"/>
+      <stop offset="55%" stop-color="#f7a1ad"/>
+      <stop offset="100%" stop-color="#e56c87"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffdfe6"/>
+      <stop offset="100%" stop-color="#f486a9" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="560" fill="#102542" rx="32"/>
+  <rect x="60" y="70" width="240" height="420" rx="46" fill="#0b1b33" stroke="#2b466b" stroke-width="8"/>
+  <rect x="165" y="80" width="30" height="80" rx="8" fill="#d8d0c7" stroke="#b1a69d" stroke-width="6"/>
+  <rect x="150" y="120" width="60" height="80" rx="12" fill="#f6f2ea" stroke="#d8d0c7" stroke-width="6"/>
+  <rect x="128" y="180" width="104" height="240" rx="28" fill="url(#bottle)" stroke="#b34964" stroke-width="8"/>
+  <rect x="138" y="210" width="84" height="80" rx="12" fill="#fff7f8" opacity="0.8"/>
+  <text x="180" y="260" text-anchor="middle" font-family="'Playfair Display', 'Times New Roman', serif" font-size="26" fill="#b03055">Rosé</text>
+  <text x="180" y="288" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="14" fill="#6b1c33">Italia · DOC</text>
+  <circle cx="260" cy="350" r="60" fill="#f1b2c2" opacity="0.25"/>
+  <g transform="translate(230,330)">
+    <rect x="-12" y="-40" width="24" height="18" rx="5" fill="#d8d0c7" stroke="#b1a69d" stroke-width="4"/>
+    <rect x="-26" y="-22" width="52" height="98" rx="18" fill="#f6f2ea" stroke="#d8d0c7" stroke-width="4"/>
+    <path d="M-22 8 h44 v36 q0 20 -22 20 q-22 0 -22 -20z" fill="url(#glass)" stroke="#b34964" stroke-width="4"/>
+  </g>
+  <text x="180" y="500" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="18" fill="#dfe8ff">Elegant, lyserød og klar til gaver</text>
+</svg>

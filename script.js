@@ -556,37 +556,18 @@ const products = [
   },
 ];
 
-// Udskift alle produktbilleder med en kurateret liste af verificerede vinfotos (rosé/prosecco)
+// Udskift alle produktbilleder med lokale, sikre illustrationer så intet link går i stykker
 const imagePools = {
-  'rosé': [
-    'https://images.pexels.com/photos/161601/wine-rose-provence-pink-161601.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/4664300/pexels-photo-4664300.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/340996/pexels-photo-340996.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/1407857/pexels-photo-1407857.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/290316/pexels-photo-290316.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/1407855/pexels-photo-1407855.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/2147508/pexels-photo-2147508.jpeg?auto=compress&cs=tinysrgb&w=900',
-  ],
-  prosecco: [
-    'https://images.pexels.com/photos/1407859/pexels-photo-1407859.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/4051440/pexels-photo-4051440.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/3570/wine-restaurant-glass-drink.jpg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/264793/pexels-photo-264793.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/1407856/pexels-photo-1407856.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/1407858/pexels-photo-1407858.jpeg?auto=compress&cs=tinysrgb&w=900',
-    'https://images.pexels.com/photos/143731/pexels-photo-143731.jpeg?auto=compress&cs=tinysrgb&w=900',
-  ],
+  'rosé': ['assets/rose.svg'],
+  prosecco: ['assets/prosecco.svg'],
+  smagskasse: ['assets/rose.svg'],
 };
 
-const poolIndex = { 'rosé': 0, prosecco: 0 };
 products.forEach((product) => {
   const pool = imagePools[product.category];
   if (pool && pool.length) {
-    const idx = poolIndex[product.category] % pool.length;
+    const idx = Math.floor(Math.random() * pool.length);
     product.image = pool[idx];
-    poolIndex[product.category] += 1;
   }
 });
 
