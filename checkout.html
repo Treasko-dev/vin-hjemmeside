@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – Nordlys Vinhandel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-checkout">
+  <div class="snow"></div>
+  <header class="top-bar">
+    <div class="branding">
+      <span class="logo">Nordlys Vinhandel</span>
+      <span class="tagline">Checkout – Rosé & Prosecco fra Italien</span>
+    </div>
+    <div class="contact">
+      <a class="contact-item" href="index.html">⬅️ Tilbage til shoppen</a>
+      <span class="contact-item">📧 support@mariusvalente.dk</span>
+      <span class="contact-item">☎️ +45 70 40 40 70</span>
+    </div>
+  </header>
+
+  <main class="checkout-layout">
+    <section class="checkout-summary">
+      <p class="pill">Din kurv</p>
+      <h1>Bekræft rosé & Prosecco</h1>
+      <div id="summary-items" class="summary-items" aria-live="polite"></div>
+      <div class="summary-extras">
+        <label class="gift-wrap"><input type="checkbox" id="co-gift-wrap" /> Gaveindpakning (35 kr.)</label>
+        <label class="gift-wrap"><input type="checkbox" id="co-gift-box" /> Premium trækasse (85 kr.)</label>
+        <label class="gift-wrap"><input type="checkbox" id="co-neighbor" /> Lever til naboen, hvis du ikke er hjemme</label>
+        <label class="gift-wrap">Hilsen på kort<input type="text" id="co-card" placeholder="Skriv en personlig hilsen" /></label>
+      </div>
+      <div class="totals">
+        <span>Subtotal</span><span id="co-subtotal">0 kr.</span>
+      </div>
+      <div class="totals">
+        <span>Levering</span><span>59 kr. (gratis over 999 kr.)</span>
+      </div>
+    </section>
+
+    <section class="checkout-form">
+      <p class="pill">Levering & betaling</p>
+      <h2>Adresse</h2>
+      <form id="checkout-form">
+        <label>Navn<input type="text" name="name" required /></label>
+        <label>E-mail<input type="email" name="email" required /></label>
+        <label>Telefon<input type="tel" name="phone" required /></label>
+        <label>Adresse<input type="text" name="address" required /></label>
+        <label>Postnr. & by<input type="text" name="zip" required /></label>
+        <label>Betalingskort<input type="text" name="card" placeholder="1234 5678 9012 3456" required /></label>
+        <button type="submit" class="btn primary full">Bekræft og betal</button>
+        <p class="muted" style="margin-top:8px;">Vi sender en bekræftelse på mail og pakker gavekortet vedlagt.</p>
+      </form>
+      <div class="policy-note">
+        <h3>Vilkår</h3>
+        <ul>
+          <li>30 dages returret på uåbnede flasker</li>
+          <li>Levering 1-2 hverdage • Gratis over 999 kr.</li>
+          <li>Kun nødvendige cookies til kurv og checkout</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

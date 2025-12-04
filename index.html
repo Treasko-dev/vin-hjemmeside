@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nordlys Vinhandel – Julemarkedsvin og gaveshop</title>
+  <title>Nordlys Vinhandel – Rosé & Prosecco fra Italien</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -25,20 +25,17 @@
   <nav class="nav-categories" aria-label="Vinkategorier">
     <button data-filter="alle" class="filter-btn active">Alle</button>
     <button data-filter="rosé" class="filter-btn">Rosé</button>
-    <button data-filter="hvidvin" class="filter-btn">Hvidvin</button>
-    <button data-filter="rødvin" class="filter-btn">Rødvin</button>
-    <button data-filter="bobler" class="filter-btn">Prosecco & bobler</button>
-    <button data-filter="dessert" class="filter-btn">Dessert & sødt</button>
-    <button data-filter="smagskasse" class="filter-btn">Smagsprøver</button>
+    <button data-filter="prosecco" class="filter-btn">Prosecco</button>
+    <button data-filter="smagskasse" class="filter-btn">Smagskasser</button>
     <button data-filter="outlet" class="filter-btn">Outlet</button>
   </nav>
 
   <main>
     <section class="hero">
       <div class="hero-content">
-        <p class="pill">Julestemning • Håndplukkede flasker • Gaveindpakning</p>
-        <h1>Byg din perfekte julegavekurv med vin fra hele verden</h1>
-        <p class="lead">Tilføj flasker til kurven, vælg gavekasse, og bestil med tryg betaling. Snerys, gran og en lun velkomst følger med.</p>
+        <p class="pill">Julestemning • Italiensk rosé & Prosecco • Gaveindpakning</p>
+        <h1>Byg din perfekte julegavekurv med rosé og Prosecco</h1>
+        <p class="lead">Kun Italiens bedste bobler og roséer. Tilføj flasker til kurven, vælg gavekasse, og bestil med tryg betaling. Snerys, gran og en lun velkomst følger med.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#produkter">Se vinene</a>
           <a class="btn ghost" href="#smag">Bestil månedens smagskasse</a>
@@ -56,12 +53,12 @@
       <div class="section-header">
         <div>
           <p class="pill">Vælg vin</p>
-          <h2>Flasker fra Italien, Frankrig, Sydafrika, Spanien og mere</h2>
-          <p class="sub">Klik på en vin for at se detaljer, noter og årgang. Tilføj gaveindpakning og læg i kurven.</p>
+          <h2>Rosé og Prosecco fra hele Italien</h2>
+          <p class="sub">Klik på en vin for at se detaljer, noter og årgang. Tilføj gaveindpakning, læg i kurven og gå til checkout.</p>
         </div>
         <div class="search">
           <label for="search" class="sr-only">Søg vin</label>
-          <input id="search" type="search" placeholder="Søg efter navn, land eller drue" />
+          <input id="search" type="search" placeholder="Søg rosé eller Prosecco" />
         </div>
       </div>
       <div id="product-grid" class="product-grid" aria-live="polite"></div>
@@ -129,18 +126,9 @@
       <div class="totals">
         <span>Subtotal</span><span id="subtotal">0 kr.</span>
       </div>
-      <button class="btn primary" data-checkout>Gå til checkout</button>
+      <a class="btn primary" data-checkout href="checkout.html">Gå til checkout</a>
+      <p class="muted" style="margin-top:8px;">Checkout åbner på egen side med adressefelter og gavekort.</p>
     </div>
-    <form class="checkout" id="checkout-form">
-      <h3>Leveringsoplysninger</h3>
-      <label>Navn<input type="text" name="name" required /></label>
-      <label>E-mail<input type="email" name="email" required /></label>
-      <label>Telefon<input type="tel" name="phone" required /></label>
-      <label>Adresse<input type="text" name="address" required /></label>
-      <label>Postnr. & by<input type="text" name="zip" required /></label>
-      <label>Betalingskort<input type="text" name="card" placeholder="1234 5678 9012 3456" required /></label>
-      <button type="submit" class="btn primary full">Bekræft ordre</button>
-    </form>
   </aside>
 
   <div class="toast" role="status" aria-live="polite"></div>

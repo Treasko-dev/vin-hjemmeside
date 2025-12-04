@@ -3,7 +3,7 @@
 En statisk, juletema vinbutik med produktgalleri, kurv, gaveindpakning og checkout-formular.
 
 ## Sådan kører du siden (vælg det der virker hos dig)
-Alle filer ligger i roden (`index.html`, `style.css`, `script.js`).
+Alle filer ligger i roden (`index.html`, `style.css`, `script.js`, `checkout.html`, `checkout.js`).
 
 ### 0) Intet installeret (virker også på Windows)
 - **Dobbeltklik** på `index.html` i mappen.
@@ -40,8 +40,15 @@ python3 -m http.server 8000
 - **Billeder loader langsomt**: De hentes fra Unsplash; prøv et andet netværk eller vent et øjeblik.
 - **Windows PermissionError / fil-tilgang-fejl i `python -m http.server`**: Flyt projektmappen til en skrivbar placering (fx `C:\Users\<brugernavn>\Documents\vin-hjemmeside`), og prøv igen. Alternativt: Brug `start.bat`/`start.ps1` (ingen server), eller installer Node og kør `npm start`.
 
+## Checkout som egen side
+- Læg rosé eller Prosecco i kurven på forsiden og klik **Gå til checkout** (knappen åbner `checkout.html`).
+- Kurven, gaveindpakning og trækasse-indstillinger bliver gemt i browserens localStorage og flyttes med over på checkout.
+- På checkout-siden kan du også vælge levering til nabo og tilføje et kort (hilsen).
+
 ## Struktur
-- `index.html` – markup for hero, kategorier, produktgrid, smagskasse, policies og kurv.
-- `style.css` – juletema, sne-animation, responsive grids, sticky kurv.
-- `script.js` – data for vinene, filtrering/søgning, detaljer, kurvlogik og checkout-formular.
+- `index.html` – shop med hero, kategorier, produktgrid, smagskasse, policies og kurv med link til checkout.
+- `style.css` – juletema, sne-animation, responsive grids, sticky kurv og checkout-layout.
+- `script.js` – data for vinene, filtrering/søgning, detaljer, kurvlogik og udsendelse til checkout.
+- `checkout.html` – dedikeret checkout-side med adressefelter, kort-hilsen og leveringsvalg.
+- `checkout.js` – loader kurven fra forsiden, opdaterer antal, gaveindpakning, trækasse og afslutter ordren.
 
