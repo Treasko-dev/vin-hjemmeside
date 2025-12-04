@@ -3,14 +3,22 @@
 En statisk, juletema vinbutik med produktgalleri, kurv, gaveindpakning og checkout-formular.
 
 ## Sådan kører du siden
-Vælg den metode der passer bedst til dit miljø. Alle filer ligger i roden (index.html, style.css, script.js).
+Vælg den metode der passer bedst til dit miljø. Alle filer ligger i roden (`index.html`, `style.css`, `script.js`).
 
-### 1) Åbn direkte uden server (hurtigst)
+### Hurtigste: npm start (medfølgende server)
+1) Installer Node.js (https://nodejs.org) hvis du ikke allerede har det.
+2) I projektmappen kører du:
+```bash
+npm start
+```
+3) Åbn derefter `http://localhost:8000` i din browser. Terminalen fortæller, hvilken port der bruges.
+
+### Uden server: Åbn direkte
 1. Dobbeltklik på `index.html` (eller højreklik → "Åbn med" → din browser).
 2. Hvis du ser en advarsel om "for meget sikkerhed", vælg at tillade lokale filer. Siden bruger kun eksterne billeder fra Unsplash.
 
-### 2) Brug en simpel lokal server (anbefalet til søgning/filtrering)
-Du kan køre en lille server for at sikre, at alle scripts loader ens på tværs af browsere.
+### Alternativ: Python server
+Du kan køre en lille server, hvis du foretrækker Python.
 
 **Windows (PowerShell):**
 ```powershell
@@ -24,13 +32,6 @@ python -m http.server 8000
 ```bash
 cd /sti/til/vin-hjemmeside
 python3 -m http.server 8000
-```
-- Åbn `http://localhost:8000` i browseren.
-
-### 3) Brug Node (alternativ)
-Hvis du har Node.js installeret:
-```bash
-npx http-server . -p 8000
 ```
 - Åbn `http://localhost:8000` i browseren.
 

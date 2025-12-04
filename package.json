@@ -1,0 +1,9 @@
+{
+  "name": "vin-hjemmeside",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Juletema vinbutik statisk side",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
