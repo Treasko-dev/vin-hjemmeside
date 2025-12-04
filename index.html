@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nordlys Vinhandel – Julemarkedsvin og gaveshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="snow"></div>
+  <header class="top-bar">
+    <div class="branding">
+      <span class="logo">Nordlys Vinhandel</span>
+      <span class="tagline">Håndplukket vin til julens hyggestunder</span>
+    </div>
+    <div class="contact">
+      <span class="contact-item">📧 support@mariusvalente.dk</span>
+      <span class="contact-item">☎️ +45 70 40 40 70</span>
+    </div>
+  </header>
+
+  <nav class="nav-categories" aria-label="Vinkategorier">
+    <button data-filter="alle" class="filter-btn active">Alle</button>
+    <button data-filter="rosé" class="filter-btn">Rosé</button>
+    <button data-filter="hvidvin" class="filter-btn">Hvidvin</button>
+    <button data-filter="rødvin" class="filter-btn">Rødvin</button>
+    <button data-filter="bobler" class="filter-btn">Prosecco & bobler</button>
+    <button data-filter="dessert" class="filter-btn">Dessert & sødt</button>
+    <button data-filter="smagskasse" class="filter-btn">Smagsprøver</button>
+    <button data-filter="outlet" class="filter-btn">Outlet</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="pill">Julestemning • Håndplukkede flasker • Gaveindpakning</p>
+        <h1>Byg din perfekte julegavekurv med vin fra hele verden</h1>
+        <p class="lead">Tilføj flasker til kurven, vælg gavekasse, og bestil med tryg betaling. Snerys, gran og en lun velkomst følger med.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#produkter">Se vinene</a>
+          <a class="btn ghost" href="#smag">Bestil månedens smagskasse</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="tree"></div>
+        <div class="tree small"></div>
+        <div class="santa">🎅</div>
+        <div class="gift">🎁</div>
+      </div>
+    </section>
+
+    <section id="produkter" class="products-section">
+      <div class="section-header">
+        <div>
+          <p class="pill">Vælg vin</p>
+          <h2>Flasker fra Italien, Frankrig, Sydafrika, Spanien og mere</h2>
+          <p class="sub">Klik på en vin for at se detaljer, noter og årgang. Tilføj gaveindpakning og læg i kurven.</p>
+        </div>
+        <div class="search">
+          <label for="search" class="sr-only">Søg vin</label>
+          <input id="search" type="search" placeholder="Søg efter navn, land eller drue" />
+        </div>
+      </div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="smag" class="tasting">
+      <div>
+        <p class="pill">Abonnement</p>
+        <h2>Månedens smagsprøve-æske</h2>
+        <p>Få 6 udvalgte flasker leveret hver måned med temaer som norditaliensk nebbiolo, sydafrikansk chenin og festlige bobler. Inkluderer smagenoter og gavevenlig emballage.</p>
+        <ul class="feature-list">
+          <li>6 flasker, altid mindst én boble og én lagret rødvin</li>
+          <li>Leveres den første torsdag i måneden</li>
+          <li>Kan pauses eller opsiges fra måned til måned</li>
+        </ul>
+        <button class="btn primary" data-subscribe>Meld mig til 699 kr./md.</button>
+      </div>
+      <div class="tasting-card">
+        <img src="https://images.unsplash.com/photo-1506377872008-397fd055263f?auto=format&fit=crop&w=900&q=80" alt="Vinæske med juletema" />
+        <div class="tasting-meta">
+          <span class="pill small">Julestemning</span>
+          <span class="pill small">Begrænset</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="outlet" id="outlet">
+      <div>
+        <p class="pill">Outlet</p>
+        <h2>Outlet & særlige partier</h2>
+        <p>Hold øje med udvalgte partier fra kælderen. Vi opdaterer løbende med restpartier, magnumflasker og julekasser til skarpe priser.</p>
+      </div>
+      <div class="outlet-placeholder">Ingen aktive outlet-tilbud lige nu – tilmeld dig nyhedsbrevet for at blive notificeret.</div>
+    </section>
+
+    <section class="policies" id="vilkår">
+      <div>
+        <h3>Returret</h3>
+        <p>30 dages fuld returret på uåbnede flasker. Returnér i original emballage, så krediterer vi beløbet inden for 5 hverdage.</p>
+      </div>
+      <div>
+        <h3>Levering & afhentning</h3>
+        <p>Dag-til-dag levering i Danmark for 59 kr. Gratis ved køb over 999 kr. Afhentning i showroom efter aftale.</p>
+      </div>
+      <div>
+        <h3>Cookies & data</h3>
+        <p>Vi bruger kun nødvendige cookies til kurv og checkout. Statistik anonymiseres. Læs mere i vores <a href="#">cookiepolitik</a>.</p>
+      </div>
+      <div>
+        <h3>Kundeservice</h3>
+        <p>Skriv til <a href="mailto:support@mariusvalente.dk">support@mariusvalente.dk</a> eller ring på +45 70 40 40 70. Vi svarer alle hverdage 09-17.</p>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart" aria-label="Indkøbskurv">
+    <div class="cart-header">
+      <h2>Kurv</h2>
+      <button class="ghost" data-clear>Ryd kurv</button>
+    </div>
+    <div id="cart-items" class="cart-items" aria-live="polite"></div>
+    <div class="cart-summary">
+      <label class="gift-wrap"><input type="checkbox" id="gift-wrap" /> Gaveindpakning (35 kr.)</label>
+      <label class="gift-wrap"><input type="checkbox" id="gift-box" /> Premium trækasse (85 kr.)</label>
+      <div class="totals">
+        <span>Subtotal</span><span id="subtotal">0 kr.</span>
+      </div>
+      <button class="btn primary" data-checkout>Gå til checkout</button>
+    </div>
+    <form class="checkout" id="checkout-form">
+      <h3>Leveringsoplysninger</h3>
+      <label>Navn<input type="text" name="name" required /></label>
+      <label>E-mail<input type="email" name="email" required /></label>
+      <label>Telefon<input type="tel" name="phone" required /></label>
+      <label>Adresse<input type="text" name="address" required /></label>
+      <label>Postnr. & by<input type="text" name="zip" required /></label>
+      <label>Betalingskort<input type="text" name="card" placeholder="1234 5678 9012 3456" required /></label>
+      <button type="submit" class="btn primary full">Bekræft ordre</button>
+    </form>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
