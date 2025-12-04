@@ -1,12 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-echo "# vin-hjemmeside" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Treasko-dev/vin-hjemmeside.git
-git push -u origin main
-name: CI
 
 # Controls when the workflow will run
 on:
